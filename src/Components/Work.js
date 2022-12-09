@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Work.css";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 
 const Work = () => {
   const [isHovering, setIsHovering] = useState(false);
@@ -21,7 +22,9 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <img src={require("../kara.png")} width="500" height="250"></img>
+          <a href="https://omieabdelhamid.github.io/kara/karakaremaster/frontend/landing/landing.html">
+            <img src={require("../kara.png")} width="500" height="250"></img>
+          </a>
           {isHovering && (
             <div>
               <h3>KaraKare</h3>
@@ -66,10 +69,15 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <img src={require("../new.png")} width="500" height="250"></img>
+          <a href="https://happyquokka111.github.io/deployment-guide/">
+            <div>
+              <img src={require("../pers.png")} width="500" height="250"></img>
+            </div>
+          </a>
+
           {isHovering && (
             <div>
-              <h3>Fleek</h3>
+              <h3>Personas and Storyboarding</h3>
               <h6>Figma</h6>
             </div>
           )}
