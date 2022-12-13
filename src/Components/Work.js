@@ -22,8 +22,13 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="https://omieabdelhamid.github.io/kara/karakaremaster/frontend/landing/landing.html">
-            <img src={require("../kara.png")} width="500" height="250"></img>
+          <a href="/iterative">
+            <img
+              src={require("../kara.png")}
+              width="500"
+              height="250"
+              alt="karakare"
+            ></img>
           </a>
           {isHovering && (
             <div>
@@ -38,11 +43,13 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <img src={require("../crypto.png")} width="500" height="250"></img>
+          <a href="/fleek">
+          <img src={require("../new.png")} width="500" height="250"></img>
+          </a>
           {isHovering && (
             <div>
-              <h3>Cryptocurrency Shop</h3>
-              <h6>React</h6>
+              <h3>Fleek</h3>
+              <h6>Figma</h6>
             </div>
           )}
         </div>
@@ -55,11 +62,13 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <img src={require("../test.png")} width="500" height="250"></img>
+          <a href="/eye">
+            <img src={require("../test.png")} width="500" height="250"></img>
+          </a>
           {isHovering && (
             <div>
               <h3>Eye Tracking</h3>
-              <h6>JavaScript, HTML, Figma</h6>
+              <h6>Figma and Python</h6>
             </div>
           )}
         </div>
@@ -69,7 +78,7 @@ const Work = () => {
           class="col-8 col-sm-6"
           id="box"
         >
-          <a href="https://happyquokka111.github.io/deployment-guide/">
+          <a href="/pers">
             <div>
               <img src={require("../pers.png")} width="500" height="250"></img>
             </div>

@@ -21,7 +21,7 @@ const Navbar = (props) => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li onClick={() => scrollToSect(home)} className="nav-item active">
-            <a className="nav-link" href="home">
+            <a className="nav-link" href="/">
               Home <span className="sr-only"></span>
             </a>
           </li>

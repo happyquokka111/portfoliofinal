@@ -3,22 +3,31 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Components/Navbar.js";
 import About from "./Components/About.js";
 import Work from "./Components/Work.js";
+import { Link } from "react-router-dom";
+import Iterative from "./Components/Kara.js";
+import Persona from "./Components/Persona.js";
+import Home from "./Components/Home.js";
+import Eyetracking from "./Components/Eyetracking.js";
+import Fleek from "./Components/Fleek.js";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useRef } from "react";
 
+
 function App() {
-  const scrollToSect = (el) => {
-    window.scrollTo({
-      top: el.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-  const home = useRef(null);
-  const about = useRef(null);
-  const work = useRef(null);
+  // const scrollToSect = (el) => {
+  //   window.scrollTo({
+  //     top: el.current.offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // };
+  // const home = useRef(null);
+  // const about = useRef(null);
+  // const work = useRef(null);
   return (
     <div className="App">
-      <div className="top">
+      <div className="header"></div>
+      {/* <div className="top">
         {<img className="name" src={require("./logo2.png")} width="7%"></img>}
 
         <div className="nav">
@@ -29,8 +38,17 @@ function App() {
             work={work}
           ></Navbar>
         </div>
-      </div>
-      <div className="container">
+      </div> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="iterative" element={<Iterative />} />
+          <Route path="pers" element={<Persona />} />
+          <Route path="eye" element={<Eyetracking />} />
+          <Route path="fleek" element={<Fleek/>} />
+        </Routes>
+      </Router>
+      {/* <div className="container">
         <div ref={home} className="container" id="descript">
           <h5>Hi, my name is</h5>
 
@@ -43,7 +61,7 @@ function App() {
         <div ref={work} className="container" id="work">
           <Work />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
